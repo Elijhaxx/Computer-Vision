@@ -1,0 +1,23 @@
+link - https://pysource.com/2021/10/19/simple-color-recognition-with-opencv-and-python/
+
+# Read/load the image into 'img' variable
+img = cv2.imread("orange_fruit.jpg")
+
+# Image format - BGR
+print(img)
+
+# Display the image, (title of the window, image)
+cv2.imshow("Img", img)
+
+# To keep displaying the image, else the image would flash and disappear
+cv2.waitKey(0)
+
+BGR & HSV Formats:
+    BGR - Blue, green and red. Values of each column range from 0 to 255. BGR format is not suitable for real life images
+    HSV - Hue, saturation and value. Hue is the color, ranges from 0 to 360. Saturation is how many are there, the quantity, ranges from 0 to 100. Value is the brightness, ranges from 0 to 100.
+
+Why HSV over BGR for this project?
+To understand why BGR format doesn't work well for real life images, sensitive to lighting changes as it affects the entire color palette, use a color picker and try this if you wanna ;)
+For real-life images, in computer vision tasks like color detection or object tracking, HSV is often preferred because it provides a better separation of color information from intensity.
+
+hsv_color_picker.py - HSV Color Picker program
