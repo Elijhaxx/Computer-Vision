@@ -1,0 +1,7 @@
+To find the object's upper and lower color use "colorCalibrationForHSV.py" and click "Open".
+Adjust the sliders until the object's color you are trying to track is fully or mostly white.
+
+My object's color - https://htmlcolorcodes.com/colors/red/
+In my case the object's low and high values are,
+    Low = [0,230,110]
+    High= [179,255,255]
